@@ -21,7 +21,6 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -101,10 +100,7 @@
     width: 100%;
   }
 
-  .hero-photo-wrap {
-    flex-shrink: 0;
-    position: relative;
-  }
+  .hero-photo-wrap { flex-shrink: 0; position: relative; }
 
   .hero-photo-ring {
     width: 220px;
@@ -122,8 +118,6 @@
     object-fit: cover;
     border: 4px solid var(--navy);
   }
-
-
 
   .hero-text { flex: 1; }
 
@@ -204,7 +198,6 @@
 
   /* === SECTIONS === */
   section { padding: 90px 5%; }
-
   .section-inner { max-width: 1100px; margin: 0 auto; }
 
   .section-label {
@@ -224,14 +217,6 @@
     margin-bottom: 48px;
   }
 
-  .section-rule {
-    width: 48px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--blue), var(--sky));
-    border-radius: 2px;
-    margin-bottom: 40px;
-  }
-
   /* === ABOUT / STATS === */
   #about { background: var(--navy-mid); }
 
@@ -242,24 +227,11 @@
     align-items: start;
   }
 
-  .about-text {
-    font-size: 1rem;
-    color: #9bbdd4;
-    line-height: 1.8;
-  }
-
+  .about-text { font-size: 1rem; color: #9bbdd4; line-height: 1.8; }
   .about-text p + p { margin-top: 16px; }
+  .about-highlight { color: var(--sky); font-weight: 600; }
 
-  .about-highlight {
-    color: var(--sky);
-    font-weight: 600;
-  }
-
-  .stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
   .stat-card {
     background: rgba(26, 108, 168, 0.1);
@@ -277,12 +249,7 @@
     display: block;
   }
 
-  .stat-label {
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin-top: 4px;
-    font-weight: 500;
-  }
+  .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 4px; font-weight: 500; }
 
   /* === SKILLS === */
   #skills { background: var(--navy); }
@@ -301,16 +268,9 @@
     transition: border-color 0.2s, transform 0.2s;
   }
 
-  .skill-card:hover {
-    border-color: rgba(111, 194, 247, 0.3);
-    transform: translateY(-3px);
-  }
+  .skill-card:hover { border-color: rgba(111, 194, 247, 0.3); transform: translateY(-3px); }
 
-  .skill-icon {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
-    display: block;
-  }
+  .skill-icon { font-size: 1.6rem; margin-bottom: 12px; display: block; }
 
   .skill-cat {
     font-family: 'Space Grotesk', sans-serif;
@@ -340,25 +300,18 @@
   .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
+    left: 0; top: 8px; bottom: 8px;
     width: 2px;
     background: linear-gradient(180deg, var(--blue), transparent);
   }
 
-  .timeline-item {
-    position: relative;
-    margin-bottom: 48px;
-  }
+  .timeline-item { position: relative; margin-bottom: 48px; }
 
   .timeline-item::before {
     content: '';
     position: absolute;
-    left: -34px;
-    top: 7px;
-    width: 12px;
-    height: 12px;
+    left: -34px; top: 7px;
+    width: 12px; height: 12px;
     border-radius: 50%;
     background: var(--blue-bright);
     border: 2px solid var(--navy-mid);
@@ -375,22 +328,9 @@
     margin-bottom: 5px;
   }
 
-  .exp-org {
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--blue-bright);
-  }
-
-  .exp-meta {
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin-top: 3px;
-  }
-
-  .exp-bullets {
-    list-style: none;
-    margin-top: 12px;
-  }
+  .exp-org { font-size: 0.88rem; font-weight: 600; color: var(--blue-bright); }
+  .exp-meta { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+  .exp-bullets { list-style: none; margin-top: 12px; }
 
   .exp-bullets li {
     font-size: 0.88rem;
@@ -401,7 +341,7 @@
   }
 
   .exp-bullets li::before {
-    content: '▸';
+    content: '\25B8';
     position: absolute;
     left: 0;
     color: var(--blue-bright);
@@ -448,19 +388,48 @@
 
   .project-emoji { font-size: 1.8rem; margin-bottom: 16px; display: block; }
 
+  .project-meta {
+    font-size: 0.72rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
   .project-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .project-desc {
     font-size: 0.85rem;
     color: #7a9ab5;
     line-height: 1.65;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+  }
+
+  .project-highlights {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  .project-highlights li {
+    font-size: 0.82rem;
+    color: #7a9ab5;
+    line-height: 1.6;
+    padding: 3px 0 3px 16px;
+    position: relative;
+  }
+
+  .project-highlights li::before {
+    content: '\25B8';
+    position: absolute;
+    left: 0;
+    color: var(--sky);
+    font-size: 0.7rem;
+    top: 5px;
   }
 
   .project-tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -526,16 +495,12 @@
     border-top: 1px solid rgba(255,255,255,0.05);
   }
 
-  /* Animate in */
   .fade-up {
     opacity: 0;
     transform: translateY(28px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  .fade-up.visible {
-    opacity: 1;
-    transform: none;
-  }
+  .fade-up.visible { opacity: 1; transform: none; }
 
   @media (max-width: 768px) {
     .hero-inner { flex-direction: column; text-align: center; gap: 40px; }
@@ -570,21 +535,19 @@
       <div class="hero-photo-ring">
         <img src="data:image/jpeg;base64,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" alt="Lina Wafaa Bentiba">
       </div>
-      
     </div>
 
     <div class="hero-text fade-up" style="transition-delay:0.15s">
-      <div class="hero-eyebrow">AI Engineering Student · ENSIA Algeria</div>
+      <div class="hero-eyebrow">AI Engineering Student - ENSIA Algeria</div>
       <h1 class="hero-name">Lina Wafaa<br><span>Bentiba</span></h1>
       <p class="hero-tagline">
-        Building intelligent systems at the intersection of <strong style="color:#a8cce0">reinforcement learning</strong>, <strong style="color:#a8cce0">deep learning</strong>, and <strong style="color:#a8cce0">remote sensing</strong>. From training RL agents and CNN/GAN satellite models to deploying NLP-powered dashboards. I turn research into working solutions.
+        Building intelligent systems at the intersection of <strong style="color:#a8cce0">reinforcement learning</strong>, <strong style="color:#a8cce0">deep learning</strong>, and <strong style="color:#a8cce0">remote sensing</strong>. From training RL agents and CNN/GAN satellite models to deploying NLP-powered dashboards, I turn research into working solutions.
       </p>
       <div class="hero-chips">
         <span class="chip">Reinforcement Learning</span>
         <span class="chip">CNN / GAN</span>
         <span class="chip">Remote Sensing</span>
         <span class="chip">Python · PyTorch</span>
-        <span class="chip">Google Earth Engine</span>
         <span class="chip">NLP</span>
         <span class="chip">Full-Stack</span>
       </div>
@@ -603,9 +566,9 @@
     <h2 class="section-title">About Me</h2>
     <div class="about-grid fade-up">
       <div class="about-text">
-        <p>I'm a final-year AI Engineering student at <span class="about-highlight">ENSIA (École Nationale Supérieure d'Intelligence Artificielle)</span>, Algeria's premier AI-focused engineering school. My work sits at the crossroads of computer vision, geospatial intelligence, and applied machine learning.</p>
-        <p>I've built real systems for real institutions - an <span class="about-highlight">intelligent analytics dashboard</span> for Algérie Poste, <span class="about-highlight">CNN/GAN pan-sharpening pipelines</span> for CNTS, and ML workflows on <span class="about-highlight">Google Earth Engine</span> for satellite-based environmental analysis.</p>
-        <p>I'm currently seeking a <span class="about-highlight">Final Year Project supervisor</span> to conduct applied AI research in <span class="about-highlight">Reinforcement Learning</span> - from RL theory and algorithm design to real-world applications in control, robotics, or decision-making systems. I bring strong theory, a track record of shipping real projects, and the drive to produce work that matters.</p>
+        <p>I'm a final-year AI Engineering student at <span class="about-highlight">ENSIA (Ecole Nationale Superieure d'Intelligence Artificielle)</span>, Algeria's premier AI-focused engineering school. My work sits at the crossroads of reinforcement learning, computer vision, and applied machine learning.</p>
+        <p>I've built real systems for real institutions, an <span class="about-highlight">intelligent analytics dashboard</span> for Algerie Poste, <span class="about-highlight">CNN/GAN pan-sharpening pipelines</span> for CNTS, and a <span class="about-highlight">human-in-the-loop Arabic translation system</span> fine-tuned with QLoRA.</p>
+        <p>I'm currently seeking a <span class="about-highlight">Final Year Project supervisor</span> to conduct applied AI research in <span class="about-highlight">Reinforcement Learning</span>, from RL theory and algorithm design to real-world applications in control, robotics, or decision-making systems.</p>
       </div>
       <div class="stats-grid">
         <div class="stat-card">
@@ -613,12 +576,12 @@
           <span class="stat-label">Research & Industry Internships</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">10+</span>
-          <span class="stat-label">Programming Languages</span>
+          <span class="stat-number">8</span>
+          <span class="stat-label">Key Projects Shipped</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">CNN<br>GAN</span>
-          <span class="stat-label">Deep Learning Architectures Deployed</span>
+          <span class="stat-number">RL</span>
+          <span class="stat-label">Q-Learning, SARSA & HER Implemented</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">2027</span>
@@ -636,6 +599,20 @@
     <h2 class="section-title">Skills & Tools</h2>
     <div class="skills-grid">
       <div class="skill-card fade-up">
+        <span class="skill-icon">🎮</span>
+        <div class="skill-cat">Reinforcement Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Q-Learning</span>
+          <span class="skill-tag">Deep Q-Networks (DQN)</span>
+          <span class="skill-tag">Policy Gradient</span>
+          <span class="skill-tag">Actor-Critic (A2C/A3C)</span>
+          <span class="skill-tag">PPO</span>
+          <span class="skill-tag">Hindsight Experience Replay (HER)</span>
+          <span class="skill-tag">OpenAI Gym</span>
+          <span class="skill-tag">MDP Formulation</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:0.06s">
         <span class="skill-icon">🧠</span>
         <div class="skill-cat">Machine Learning & Deep Learning</div>
         <div class="skill-tags">
@@ -646,24 +623,10 @@
           <span class="skill-tag">NLP</span>
           <span class="skill-tag">Time-Series</span>
           <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">PyTorch / TensorFlow</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="transition-delay:0.08s">
-        <span class="skill-icon">🎮</span>
-        <div class="skill-cat">Reinforcement Learning</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Q-Learning</span>
-          <span class="skill-tag">Deep Q-Network (DQN)</span>
-          <span class="skill-tag">Policy Gradient</span>
-          <span class="skill-tag">Actor-Critic (A2C/A3C)</span>
-          <span class="skill-tag">PPO</span>
-          <span class="skill-tag">OpenAI Gym</span>
-          <span class="skill-tag">MDP Formulation</span>
-          <span class="skill-tag">Reward Shaping</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.08s">
+      <div class="skill-card fade-up" style="transition-delay:0.12s">
         <span class="skill-icon">🛰️</span>
         <div class="skill-cat">Remote Sensing & Geospatial</div>
         <div class="skill-tags">
@@ -674,7 +637,7 @@
           <span class="skill-tag">Satellite Pipelines</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="transition-delay:0.16s">
+      <div class="skill-card fade-up" style="transition-delay:0.18s">
         <span class="skill-icon">💻</span>
         <div class="skill-cat">Programming Languages</div>
         <div class="skill-tags">
@@ -689,31 +652,20 @@
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.24s">
-        <span class="skill-icon">📊</span>
-        <div class="skill-cat">Data Science</div>
-        <div class="skill-tags">
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
-          <span class="skill-tag">Statistical Analysis</span>
-          <span class="skill-tag">Feature Engineering</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.32s">
         <span class="skill-icon">🌐</span>
         <div class="skill-cat">Web & Mobile Development</div>
         <div class="skill-tags">
           <span class="skill-tag">Flask</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
           <span class="skill-tag">Flutter</span>
           <span class="skill-tag">Android (Kotlin)</span>
+          <span class="skill-tag">React Native</span>
           <span class="skill-tag">REST APIs</span>
           <span class="skill-tag">Vercel</span>
         </div>
       </div>
-      <div class="skill-card fade-up" style="transition-delay:0.40s">
+      <div class="skill-card fade-up" style="transition-delay:0.30s">
         <span class="skill-icon">⚙️</span>
         <div class="skill-cat">DevOps, DBs & Security</div>
         <div class="skill-tags">
@@ -741,11 +693,11 @@
       <div class="timeline-item">
         <div class="exp-header">
           <div class="exp-title">AI Engineer & Data Visualization Intern</div>
-          <div class="exp-org">Algérie Poste</div>
-          <div class="exp-meta">Jan 2025 – Mar 2025 · Oran, Algeria</div>
+          <div class="exp-org">Algerie Poste</div>
+          <div class="exp-meta">Jan 2025 - Mar 2025 - Oran, Algeria</div>
         </div>
         <ul class="exp-bullets">
-          <li>Co-designed <strong>NextDash</strong>, an intelligent decision-support dashboard serving real operational teams, built collaboratively between our team and Algérie Poste's institutional stakeholders.</li>
+          <li>Co-designed <strong>NexaDash</strong>, an intelligent decision-support dashboard serving real operational teams, built collaboratively with Algerie Poste's institutional stakeholders.</li>
           <li>Integrated predictive ML models with NLP-powered natural-language query interfaces for non-technical users.</li>
           <li>Engineered front-end / back-end integration delivering real-time analytics and actionable KPIs.</li>
         </ul>
@@ -754,8 +706,8 @@
       <div class="timeline-item">
         <div class="exp-header">
           <div class="exp-title">Remote Sensing & Deep Learning Intern</div>
-          <div class="exp-org">CNTS – Centre National des Techniques Spatiales</div>
-          <div class="exp-meta">Sep 2025 · Arzew, Algeria</div>
+          <div class="exp-org">CNTS - Centre National des Techniques Spatiales</div>
+          <div class="exp-meta">Sep 2025 - Arzew, Algeria</div>
         </div>
         <ul class="exp-bullets">
           <li>Developed and benchmarked <strong>CNN-based pan-sharpening models</strong> for satellite image super-resolution.</li>
@@ -768,8 +720,8 @@
       <div class="timeline-item">
         <div class="exp-header">
           <div class="exp-title">Machine Learning Intern</div>
-          <div class="exp-org">CTS Arzew – Centre des Techniques Spatiales</div>
-          <div class="exp-meta">Jul 2024 · Arzew, Algeria</div>
+          <div class="exp-org">CTS Arzew - Centre des Techniques Spatiales</div>
+          <div class="exp-meta">Jul 2024 - Arzew, Algeria</div>
         </div>
         <ul class="exp-bullets">
           <li>Built ML solutions via <strong>Google Earth Engine</strong> for large-scale environmental remote sensing analysis.</li>
@@ -781,7 +733,7 @@
         <div class="exp-header">
           <div class="exp-title">Database & Networks Intern</div>
           <div class="exp-org">Sonatrach</div>
-          <div class="exp-meta">Jun – Jul 2023 · Oran, Algeria</div>
+          <div class="exp-meta">Jun - Jul 2023 - Oran, Algeria</div>
         </div>
         <ul class="exp-bullets">
           <li>Maintained and optimized enterprise-critical databases; configured servers, storage, and network hardware.</li>
@@ -799,97 +751,125 @@
     <div class="section-label">What I've Built</div>
     <h2 class="section-title">Key Projects</h2>
     <div class="projects-grid">
-      <div class="project-card fade-up" style="transition-delay:0.25s">
+
+      <div class="project-card fade-up">
         <span class="project-emoji">🎮</span>
-        <div class="project-title">Reinforcement Learning - FYP Research Direction</div>
-        <p class="project-desc">Pursuing a Final Year Project in Reinforcement Learning. Areas of interest include deep RL algorithms (DQN, PPO, A3C), reward shaping, policy optimization, and real-world applications in autonomous systems, robotics simulation, or resource optimization. Actively seeking a supervisor to define and execute original RL research.</p>
+        <div class="project-meta">Academic Project</div>
+        <div class="project-title">RL Maze & Path-Finding Visual Simulator</div>
+        <p class="project-desc">A maze-solving RL playground comparing three algorithms, Q-Learning, SARSA, and Hindsight Experience Replay (HER), on the same environment, with a Pygame demo, exported GIFs, and a self-contained interactive HTML dashboard.</p>
+        <ul class="project-highlights">
+          <li>3-round difficulty experiment showing where tabular methods break down</li>
+          <li>Demonstrates why HER enables multi-goal generalization in sparse-reward settings</li>
+          <li>100% success rate with optimal 18-step paths on 10x10 procedurally generated mazes</li>
+        </ul>
         <div class="project-tags">
-          <span class="project-tag">DQN</span>
-          <span class="project-tag">PPO</span>
-          <span class="project-tag">Policy Gradient</span>
-          <span class="project-tag">OpenAI Gym</span>
-          <span class="project-tag">PyTorch</span>
-          <span class="project-tag">FYP</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Q-Learning</span>
+          <span class="project-tag">SARSA</span>
+          <span class="project-tag">HER</span>
+          <span class="project-tag">Pygame</span>
         </div>
       </div>
 
-      <div class="project-card fade-up">
+      <div class="project-card fade-up" style="transition-delay:0.07s">
+        <span class="project-emoji">🏥</span>
+        <div class="project-meta">AI Project</div>
+        <div class="project-title">Hospital Route Optimization AI</div>
+        <p class="project-desc">AI-powered system for optimizing hospital routes and resource allocation using ML algorithms. Designed to improve patient flow, reduce waiting times, and optimize staff scheduling in healthcare facilities.</p>
+        <ul class="project-highlights">
+          <li>Route optimization algorithms</li>
+          <li>Real-time patient tracking</li>
+          <li>Resource allocation efficiency</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Machine Learning</span>
+          <span class="project-tag">Health Tech</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" style="transition-delay:0.14s">
+        <span class="project-emoji">🌐</span>
+        <div class="project-meta">NLP Team Project</div>
+        <div class="project-title">Tarjama - Human-in-the-Loop Arabic Machine Translation</div>
+        <p class="project-desc">Built a HITL translation environment for English-Arabic and French-Arabic. Curated a large-scale multi-domain parallel corpus and designed an agentic pipeline for continuous learning from human feedback.</p>
+        <ul class="project-highlights">
+          <li>NLLB-3.3B fine-tuned with QLoRA: BLEU 48.81, METEOR 73.24, TER 30.52</li>
+          <li>6-agent orchestration: Preprocessor, Validator, Deduplicator, Executor, Monitor, Orchestrator</li>
+          <li>FAISS-based deduplication & automatic fine-tuning triggers</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">QLoRA</span>
+          <span class="project-tag">NLLB-3.3B</span>
+          <span class="project-tag">Multi-agent</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" style="transition-delay:0.21s">
+        <span class="project-emoji">📊</span>
+        <div class="project-meta">Industry Project</div>
+        <div class="project-title">NexaDash - Customizable AI Dashboard</div>
+        <p class="project-desc">Customizable prompt-based intelligent dashboard developed for Algerie Poste. Integrates predictive analytics, NLP query interface, real-time KPI visualization, and AI-powered prompts for postal operations.</p>
+        <ul class="project-highlights">
+          <li>Custom AI prompts & real-time data visualization</li>
+          <li>NLP natural-language query interface for non-technical users</li>
+          <li>Built collaboratively with institutional stakeholders</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">NLP</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" style="transition-delay:0.28s">
         <span class="project-emoji">🛰️</span>
+        <div class="project-meta">Research Project</div>
         <div class="project-title">CNN/GAN Pan-Sharpening for Satellite Imagery</div>
-        <p class="project-desc">Deep learning image fusion to produce high-resolution multispectral satellite images. Designed, implemented, and benchmarked both CNN and GAN architectures. Evaluated using SSIM, PSNR, and spectral fidelity metrics - GAN approach outperformed classical pan-sharpening baselines.</p>
+        <p class="project-desc">Deep learning image fusion to produce high-resolution multispectral satellite images. Implemented and compared CNN vs. GAN approaches; evaluated using SSIM, PSNR, and spectral fidelity metrics.</p>
         <div class="project-tags">
           <span class="project-tag">PyTorch</span>
           <span class="project-tag">CNN</span>
           <span class="project-tag">GAN</span>
-          <span class="project-tag">SSIM/PSNR</span>
-          <span class="project-tag">Satellite</span>
-          <span class="project-tag">CNTS</span>
+          <span class="project-tag">Remote Sensing</span>
         </div>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.1s">
-        <span class="project-emoji">📊</span>
-        <div class="project-title">NextDash - Intelligent Analytics Dashboard</div>
-        <p class="project-desc">Full-stack AI-powered dashboard for Algérie Poste. Integrates predictive analytics models, a natural-language query interface (NLP), and real-time KPI visualization for operational decision support. Built in cross-functional collaboration with institutional teams.</p>
-        <div class="project-tags">
-          <span class="project-tag">NLP</span>
-          <span class="project-tag">Flask</span>
-          <span class="project-tag">Predictive ML</span>
-          <span class="project-tag">Dashboard</span>
-          <span class="project-tag">Real-time</span>
-          <span class="project-tag">Algérie Poste</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-up" style="transition-delay:0.2s">
+      <div class="project-card fade-up" style="transition-delay:0.35s">
         <span class="project-emoji">🌍</span>
+        <div class="project-meta">Research Project</div>
         <div class="project-title">GEE Remote Sensing Analysis Pipeline</div>
-        <p class="project-desc">Google Earth Engine-based ML pipeline for land cover classification, vegetation index extraction (NDVI, EVI), and environmental change detection over Algerian territory. Scales to large geospatial datasets without local compute constraints.</p>
+        <p class="project-desc">Google Earth Engine-based ML pipeline for land cover classification, vegetation index extraction, and environmental change detection over Algeria.</p>
         <div class="project-tags">
           <span class="project-tag">Google Earth Engine</span>
           <span class="project-tag">Python</span>
           <span class="project-tag">NDVI</span>
-          <span class="project-tag">Land Cover</span>
-          <span class="project-tag">Change Detection</span>
         </div>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.3s">
-        <span class="project-emoji">🔐</span>
-        <div class="project-title">Network Security & Reconnaissance Toolkit</div>
-        <p class="project-desc">Applied cybersecurity coursework and hands-on practice: network topology mapping with Nmap, web vulnerability scanning with Nikto, OSINT reconnaissance using theHarvester and whois, and network simulation via Cisco Packet Tracer.</p>
-        <div class="project-tags">
-          <span class="project-tag">Nmap</span>
-          <span class="project-tag">Nikto</span>
-          <span class="project-tag">theHarvester</span>
-          <span class="project-tag">Linux</span>
-          <span class="project-tag">Cisco</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-up" style="transition-delay:0.4s">
+      <div class="project-card fade-up" style="transition-delay:0.42s">
         <span class="project-emoji">📱</span>
-        <div class="project-title">Mobile App Development (Kotlin & Flutter)</div>
-        <p class="project-desc">Developed Android applications with Kotlin and cross-platform apps with Flutter/Dart. Includes REST API integration, local database management with SQLite, and responsive UI design following material design principles.</p>
+        <div class="project-meta">Mobile Application</div>
+        <div class="project-title">Addiction Recovery Mobile App</div>
+        <p class="project-desc">Mobile app supporting individuals in addiction recovery with progress tracking, motivational content, community support, and personalized recovery plans.</p>
         <div class="project-tags">
-          <span class="project-tag">Kotlin</span>
-          <span class="project-tag">Flutter</span>
-          <span class="project-tag">Dart</span>
-          <span class="project-tag">SQLite</span>
-          <span class="project-tag">REST API</span>
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Health Tech</span>
+          <span class="project-tag">UI/UX</span>
         </div>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.5s">
-        <span class="project-emoji">🗄️</span>
-        <div class="project-title">Enterprise Database Optimization (Sonatrach)</div>
-        <p class="project-desc">Maintained and optimized production Oracle SQL databases for Algeria's national energy company. Improved query performance, configured storage infrastructure, and documented schema changes for operational continuity.</p>
+      <div class="project-card fade-up" style="transition-delay:0.49s">
+        <span class="project-emoji">🏭</span>
+        <div class="project-meta">Academic Project</div>
+        <div class="project-title">MRP System</div>
+        <p class="project-desc">Complete Material Requirements Planning system with full system architecture, database optimization, and user management module.</p>
         <div class="project-tags">
-          <span class="project-tag">Oracle SQL</span>
-          <span class="project-tag">SQL*Plus</span>
-          <span class="project-tag">DBeaver</span>
-          <span class="project-tag">Network Config</span>
-          <span class="project-tag">Enterprise</span>
+          <span class="project-tag">Java</span>
+          <span class="project-tag">Database</span>
+          <span class="project-tag">System Design</span>
         </div>
       </div>
 
@@ -923,11 +903,10 @@
 </section>
 
 <footer>
-  &copy; 2025 Lina Wafaa Bentiba · AI Engineering Student · ENSIA Algeria
+  &copy; 2025 Lina Wafaa Bentiba - AI Engineering Student - ENSIA Algeria
 </footer>
 
 <script>
-  // Intersection observer for fade-up animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -939,7 +918,6 @@
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Smooth active nav
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
 
